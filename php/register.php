@@ -23,6 +23,9 @@ if ($conn->connect_error) {
 </style>
 </head>
     <body>
+        <a href= index.php>
+            <button>Back</button>
+        </a>
         <div class="wrapper">
         <div class="container-fluid">
         <div class="row">

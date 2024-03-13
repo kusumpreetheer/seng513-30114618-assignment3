@@ -14,12 +14,23 @@
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $sql = "INSERT INTO users (name,email,mobile,hash)VALUES    ('$name','$email','$mobile', '$hash')";
     if (mysqli_query($conn, $sql)) {
-    echo "New record has been added successfully !";
-    // echo $hash;
+        echo '<script>alert("Registered succesfully")</script>'; 
+        // echo $hash;
     } 
     else {
-    echo "Error: " . $sql . ":-" . mysqli_error($conn);
+        // echo "Error: " . $sql . ":-" . mysqli_error($conn);
+        echo '<script>alert("Please fill out all fields")</script>';  
     }
     mysqli_close($conn);
     }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href= index.php>
+        <button>Back</button>
+    </a>
+</body>
