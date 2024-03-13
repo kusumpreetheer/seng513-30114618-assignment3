@@ -6,6 +6,5 @@
 TO-DO:
 - Remove any hardcoded passwords and discover a way to provide the docker-compose.yml with access to that password information. This means you should not need to manually enter your passwords for MySQL when starting your docker-compose file
 - Symfony [Bonus]: Additional marks for using the Symfony framework for application development. (I would probably end up skipping this)
-- Admin Page: Create an administrator interface to view registered accounts and delete user accounts (just need to delete accounts now)
   
 - Make the UI better
