@@ -37,64 +37,24 @@
 <meta charset="UTF-8">
 <title>Create Record</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style type="text/css">
-.wrapper{
-  width: 700px;
-  margin: 0 auto;
-}
-.message-box {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-top: 10px; /* Add margin to create space between the message box and the buttons */
-}
-.btn-back {
-    text-decoration: none; /* Remove underline from the link */
-    margin: 10px;
-    padding: 10px;
-    padding-top: 20px; /* Remove padding from the top */
-}
-.btn-back button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-.btn-back button:hover {
-    cursor: pointer;
-}
-
-.btn-success {
-    background-color: #90A1B2 !important;
-    border-color: #90A1B2 !important;
-}
-</style>
+<link rel="stylesheet" href="styles/general.css">
 </head>
     <body>
     <a href="index.php" class="btn-back">
             <button><i class="fas fa-arrow-left"></i></button>
         </a>
-        <div class="wrapper">
         <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="page-header">
-                    <h2>Admin</h2>
+            <div class="col-md-6 offset-md-3 box">
+                <h1><strong>Admin</strong></h1>
+                <p>Which user's information would you like to delete?</p>
+                <form action="delete.php" method="post">
+                    <div class="form-group">
+                        <label>ID</label>
+                        <input type="number" name="id" class="form-control">
                     </div>
-                        <p>Which user's information would you like to delete?</p>
-                        <form action="delete.php" method="post">
-                            <div class="form-group">
-                                <label>ID</label>
-                                <input type="number" name="id" class="form-control">
-                            </div>
-                            <input type="submit" class="btn btn-success btn-primary" name="submit" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
+                    <input type="submit" class="btn btn-custom" name="submit" value="Submit">
+                </form>
+            </div>  
         </div>
     </body>
-    <div>
-    </div>
 </html>
