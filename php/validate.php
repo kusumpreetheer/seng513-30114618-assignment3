@@ -22,12 +22,23 @@
                 exit();
             }
             else {
-                echo "no records found with this usename/password";
+                echo '<div class="message-box">no records found with this username/password</div>';
             }
         }
     }
     else {
-        echo "0 results";
+        echo '<div class="message-box">0 results</div>';
     }
     $conn->close();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+    <a href= index.php>
+        <button>Back</button>
+    </a>
+</body>
