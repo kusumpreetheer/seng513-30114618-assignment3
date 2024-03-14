@@ -8,15 +8,15 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 <link rel="stylesheet" href="styles/general.css">
 </head>
     <body>
-        <a href= index.php>
-            <button>Back</button>
+        <a href="index.php" class="btn-back">
+            <button><i class="fas fa-arrow-left"></i></button>
         </a>
         <div class="container-fluid">
             <div class="col-md-6 offset-md-3 box">
